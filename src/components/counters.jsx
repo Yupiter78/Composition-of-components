@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Counter from "./counter";
 
-const initialState = [
-  { value: 0, id: 1, name: "Ложка" },
-  { value: 4, id: 2, name: "Вилка" },
-  { value: 0, id: 3, name: "Тарелка" },
-  { value: 0, id: 4, name: "Стартовый набор минималиста" },
-  { value: 0, id: 5, name: "Ненужные вещи" },
-];
 const Counters = () => {
+  const initialState = [
+    { value: 0, id: 1, name: "Ложка" },
+    { value: 4, id: 2, name: "Вилка" },
+    { value: 0, id: 3, name: "Тарелка" },
+    { value: 0, id: 4, name: "Стартовый набор минималиста" },
+    { value: 0, id: 5, name: "Ненужные вещи" },
+  ];
   const [counters, setCounters] = useState(initialState);
 
   const handleDelete = (counterId) => {
@@ -37,7 +37,6 @@ const Counters = () => {
   };
 
   const handleReset = () => {
-    console.log("initialState:", initialState);
     setCounters(initialState);
   };
   return (

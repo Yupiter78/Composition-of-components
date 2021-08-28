@@ -1,7 +1,6 @@
 import React from "react";
 
 const Counter = (props) => {
-  console.log("props:", props);
   const formValue = () => {
     return props.value === 0 ? "Ноль" : props.value;
   };
